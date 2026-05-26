@@ -1,0 +1,119 @@
+{
+  "version": 6,
+  "credit": [
+    "Clickism"
+  ],
+  "update": "ClickVillagers: &a&l有新版本可用: &f{version}",
+  "no_permission": "你没有权限执行此操作。",
+  "anchor_add": "你已固定该村民",
+  "anchor_remove": "你已解除该村民的固定",
+  "villager_hopper_place": "你放置了一个村民漏斗",
+  "villager_hopper_break": "你破坏了一个村民漏斗",
+  "pick_up_villager": "你拾起了一名村民",
+  "enter_partner": "你还有 &l10 秒&e 在聊天框输入要添加/移除的交易伙伴名称&l&n:",
+  "enter_partner_timeout": "交易伙伴选择已取消。",
+  "claim_villager": "你已认领该村民。&f&n按住Shift+右键&a 村民可进行编辑。",
+  "unclaim_villager": "你已取消认领该村民。",
+  "invalid_partner": "请输入有效的玩家名。",
+  "partner_add": "已将 &l{partner}&a 添加为你的交易伙伴。",
+  "partner_remove": "已将 &l{partner}&e 从你的交易伙伴中移除。",
+  "partner_limit_reached": "交易伙伴数量已达上限: &6&l{limit}",
+  "hopper_limit_reached": "该区块村民漏斗已达上限: &6&l{limit}",
+  "belongs_to": "该村民归属: &6🔑 {owner}",
+  "biome_changed": "已将该村民群系改为 &l{biome}。",
+  "write_error": "写入村民数据失败。",
+  "read_error": "读取村民数据失败。",
+  "trades_reset": "你已重置该村民的交易。",
+  "info_owner": "所有者",
+  "info_anchored": "已固定",
+  "info_trade_closed": "交易已关闭",
+  "info_trades": "交易",
+  "villager": "村民",
+  "baby_villager": "幼年村民",
+  "villager_with_profession": "{profession} 村民",
+  "villager.lore": [
+    "&8右键将村民重新放置。"
+  ],
+  "villager_hopper": "村民漏斗",
+  "villager_hopper.lore": [
+    "&8用于自动拾取村民。"
+  ],
+  "title_claim_villager": "认领村民",
+  "title_edit": "&l{owner}&2 的村民",
+  "title_change_biome": "选择村民群系",
+  "button_claim_villager": "&6🔒 &l认领村民",
+  "button_claim_villager.lore": [
+    "&e&l点击认领该村民。",
+    "&e已认领的村民仅可被",
+    "&e所有者拾取。"
+  ],
+  "button_unclaim_villager": "&4🔓 &l取消认领",
+  "button_unclaim_villager.lore": [
+    "&c&l点击取消认领该村民。",
+    "&c未认领的村民可被",
+    "&c任何人拾取。"
+  ],
+  "button_pick_up_villager": "&6&l↑ &l拾起村民 &6&l↑",
+  "button_pick_up_villager.lore": [
+    "&e点击拾起该村民。"
+  ],
+  "button_partner": "&6✍ &f&l添加交易伙伴",
+  "button_partner.lore": [
+    "&7点击添加/移除交易伙伴。",
+    "&7交易伙伴可以与你所有",
+    "&7的村民进行交易。"
+  ],
+  "button_trade_open": "&2$ &l交易开启",
+  "button_trade_open.lore": [
+    "&a所有人都可以与该村民交易。"
+  ],
+  "button_trade_closed": "&4❌ &l交易关闭",
+  "button_trade_closed.lore": [
+    "&c只有你和你的交易伙伴",
+    "&c可以与该村民交易。"
+  ],
+  "button_redirect_change_biome_menu": "&6🌲 &l更改群系",
+  "button_redirect_change_biome_menu.lore": [
+    "&e点击更改该村民的群系。"
+  ],
+  "button_change_biome.lore": [
+    "&a点击更改该村民的群系。"
+  ],
+  "button_back": "&f◀ &l返回",
+  "button_back.lore": [
+    "&7返回上一级菜单。"
+  ],
+  "button_reset_trades": "&4♻ &l重置交易",
+  "button_reset_trades.lore": [
+    "&c点击重置该村民交易。",
+    "&c&l此操作不可撤销。"
+  ],
+  "biome.desert": "沙漠",
+  "biome.jungle": "丛林",
+  "biome.plains": "平原",
+  "biome.savanna": "热带草原",
+  "biome.snow": "雪地",
+  "biome.swamp": "沼泽",
+  "biome.taiga": "针叶林",
+  "profession.armorer": "盔甲商",
+  "profession.butcher": "屠夫",
+  "profession.cartographer": "制图师",
+  "profession.cleric": "牧师",
+  "profession.farmer": "农民",
+  "profession.fisherman": "渔夫",
+  "profession.fletcher": "制箭师",
+  "profession.leatherworker": "皮匠",
+  "profession.librarian": "图书管理员",
+  "profession.mason": "石匠",
+  "profession.nitwit": "傻子村民",
+  "profession.shepherd": "牧羊人",
+  "profession.toolsmith": "工具匠",
+  "profession.weaponsmith": "武器匠",
+  "usage": "&c用法: {usage}",
+  "pick_up_cooldown": "请等待 &l{seconds} 秒&c 后再拾起该村民",
+  "claim_cooldown": "请等待 &l{seconds} 秒&c 后再认领该村民",
+  "config_set": "配置项 \"&l{option}&a\" 已设为 &l{value}。",
+  "config_get": "配置项 \"&l{option}&a\" 当前值为 &l{value}。",
+  "config_path": "配置文件路径: &f{path}",
+  "config_reload": "配置文件已重载。"
+}

@@ -28,10 +28,10 @@ public interface ClickVillagersConfig {
                             """);
 
     ConfigOption<String> LANGUAGE =
-            CONFIG.option("language", "en_US")
+            CONFIG.option("language", "zh_CN")
                     .description("""
                             Language of the plugin.
-                            Available languages: en_US, de_DE, ru_RU, vi_VN
+                            Available languages: en_US, de_DE, ru_RU, vi_VN, zh_CN
                             """)
                     .onChange(lang -> Message.LOCALIZATION
                             .language(lang)

@@ -102,7 +102,14 @@ public final class ClickVillagers extends JavaPlugin {
                     .requires(sender -> Permission.CONFIG.has(sender.getSender()))
                     .add(new SetCommand(Message.CONFIG_SET::send))
                     .add(new GetCommand(Message.CONFIG_GET::send))
-                    .add(new ReloadCommand(Message.CONFIG_RELOAD::send))
+                    .add(new ReloadCommand(sender -> {
+                        // 1. 重载主配置
+                        CONFIG.load();
+                        // 2. 重载汉化文件
+                        LangManager.reload();
+                        // 3. 发送成功提示（给执行命令的人）
+                        Message.CONFIG_RELOAD.send(sender);
+                    }))
                     .add(new PathCommand(Message.CONFIG_PATH::send))
                     .buildRoot());
             commands.registrar().register(root.build());

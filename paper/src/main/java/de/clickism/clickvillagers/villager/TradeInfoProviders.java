@@ -29,7 +29,9 @@ public class TradeInfoProviders {
             .acceptResults(Material.ENCHANTED_BOOK)
             .ingredientFormatter(item -> {
                 if (item.getType() != Material.EMERALD) return null;
-                return item.getAmount() + " Emerald";
+                Material material = item.getType();
+                String matId = material.name().toLowerCase();
+                return item.getAmount() + " " + LangManager.getItemName(matId);
             })
             .resultFormatter(TradeInfoProviders::formatEnchantedBook)
             .build();

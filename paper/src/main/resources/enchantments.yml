@@ -1,5 +1,4 @@
-# 附魔翻译配置 - 适配 Minecraft 26.1.2
-# 盔甲附魔
+# 原版基础附魔
 protection: "保护"
 fire_protection: "火焰保护"
 feather_falling: "摔落保护"
@@ -11,8 +10,9 @@ thorns: "荆棘"
 depth_strider: "深海探索者"
 frost_walker: "冰霜行者"
 binding_curse: "绑定诅咒"
+vanishing_curse: "消失诅咒"
 
-# 近战武器附魔（剑）
+# 武器附魔
 sharpness: "锋利"
 smite: "亡灵杀手"
 bane_of_arthropods: "节肢杀手"
@@ -21,33 +21,38 @@ fire_aspect: "火焰附加"
 looting: "掠夺"
 sweeping_edge: "横扫之刃"
 
-# 工具附魔（镐/斧/铲/锄）
+# 工具附魔
 efficiency: "效率"
 silk_touch: "精准采集"
 unbreaking: "耐久"
 fortune: "时运"
 
-# 弓附魔
+# 弓 & 弩
 power: "力量"
 punch: "冲击"
 flame: "火矢"
 infinity: "无限"
-
-# 弩附魔
 multishot: "多重射击"
 piercing: "穿透"
 quick_charge: "快速装填"
 
-# 钓鱼竿附魔
+# 钓鱼竿
 luck_of_the_sea: "海之眷顾"
 lure: "饵钓"
 
-# 三叉戟附魔
+# 三叉戟
 loyalty: "忠诚"
 impaling: "穿刺"
 riptide: "激流"
 channeling: "引雷"
 
-# 通用特殊附魔 & 诅咒
+# 1.19+ / 1.20+ 新增
+swift_sneak: "迅捷潜行"
+soul_speed: "灵魂疾行"
+
+# 26.1.2 试炼密室全新附魔（完整版）
 mending: "经验修补"
-vanishing_curse: "消失诅咒"
+density: "致密"
+breach: "破甲"
+wind_burst: "风涌"
+lunge: "猛冲"

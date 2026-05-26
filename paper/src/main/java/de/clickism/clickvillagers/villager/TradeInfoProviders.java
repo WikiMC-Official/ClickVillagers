@@ -134,7 +134,6 @@ public class TradeInfoProviders {
                     || material == Material.QUARTZ_BLOCK || material == Material.EMERALD) {
                     return ITEM_FORMATTER.apply(item);
                 }
-                Material material = item.getType();
                 String matId = material.name().toLowerCase();
                 return "&6🪨 " + item.getAmount() + " " + LangManager.getItemName(matId);
             })

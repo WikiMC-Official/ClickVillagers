@@ -12,8 +12,12 @@ plugins {
 
 rootProject.name = "ClickVillagers"
 
-include("paper", "mod")
+// 注释掉 mod，只保留 paper
+// include("paper", "mod")
+include("paper")
 
+// 注释整个 stonecutter 区块，不再构建多版本模组
+/*
 stonecutter {
     kotlinController = true
     create("mod") {
@@ -33,3 +37,4 @@ stonecutter {
         vcsVersion = "26.1-fabric+noremap"
     }
 }
+*/

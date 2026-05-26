@@ -1,4 +1,5 @@
-# 附魔翻译配置
+# 附魔翻译配置 - 适配 Minecraft 26.1.2
+# 盔甲附魔
 protection: "保护"
 fire_protection: "火焰保护"
 feather_falling: "摔落保护"
@@ -11,6 +12,7 @@ depth_strider: "深海探索者"
 frost_walker: "冰霜行者"
 binding_curse: "绑定诅咒"
 
+# 近战武器附魔（剑）
 sharpness: "锋利"
 smite: "亡灵杀手"
 bane_of_arthropods: "节肢杀手"
@@ -19,27 +21,33 @@ fire_aspect: "火焰附加"
 looting: "掠夺"
 sweeping_edge: "横扫之刃"
 
+# 工具附魔（镐/斧/铲/锄）
 efficiency: "效率"
 silk_touch: "精准采集"
 unbreaking: "耐久"
 fortune: "时运"
 
+# 弓附魔
 power: "力量"
 punch: "冲击"
 flame: "火矢"
 infinity: "无限"
 
+# 弩附魔
 multishot: "多重射击"
 piercing: "穿透"
 quick_charge: "快速装填"
 
+# 钓鱼竿附魔
 luck_of_the_sea: "海之眷顾"
 lure: "饵钓"
 
+# 三叉戟附魔
 loyalty: "忠诚"
 impaling: "穿刺"
 riptide: "激流"
 channeling: "引雷"
 
+# 通用特殊附魔 & 诅咒
 mending: "经验修补"
 vanishing_curse: "消失诅咒"

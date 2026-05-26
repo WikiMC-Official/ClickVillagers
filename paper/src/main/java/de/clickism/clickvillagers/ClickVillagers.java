@@ -40,6 +40,7 @@ import java.util.logging.Logger;
 
 import static de.clickism.clickvillagers.ClickVillagersConfig.*;
 import static de.clickism.clickvillagers.message.Message.UPDATE;
+import de.clickism.clickvillagers.util.LangManager;
 
 @SuppressWarnings("UnstableApiUsage")
 public final class ClickVillagers extends JavaPlugin {
@@ -60,6 +61,7 @@ public final class ClickVillagers extends JavaPlugin {
     @Override
     public void onEnable() {
         CONFIG.load(); // Will also load messages
+        LangManager.init();
         // Load data
         PartnerManager partnerManager;
         try {

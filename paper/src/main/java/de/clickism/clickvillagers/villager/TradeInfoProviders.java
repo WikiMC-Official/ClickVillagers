@@ -7,6 +7,7 @@
 package de.clickism.clickvillagers.villager;
 
 import de.clickism.clickvillagers.util.Utils;
+import de.clickism.clickvillagers.util.LangManager;
 import org.bukkit.Material;
 import org.bukkit.entity.Villager;
 import org.bukkit.inventory.ItemStack;
@@ -37,10 +38,11 @@ public class TradeInfoProviders {
         String prefix = getPrefix(material);
         prefix = (prefix == null) ? "" : prefix + " ";
         boolean isTool = item.getType().getMaxDurability() != 0;
-        String name = (isTool)
-                ? Utils.formatMaterial(material)
-                : Utils.formatItem(item);
-        return prefix + name;
+        String matId = material.name().toLowerCase();
+        String showName = isTool
+                ? LangManager.getItemName(matId)
+                : item.getAmount() + " " + LangManager.getItemName(matId);
+        return prefix + showName;
     };
     public static final TradeInfoProvider FARMER = TradeInfoProvider.builder()
             .acceptIngredients(Material.WHEAT, Material.BEETROOT, Material.CARROT, Material.POTATO, Material.PUMPKIN, Material.MELON)
@@ -132,7 +134,9 @@ public class TradeInfoProviders {
                     || material == Material.QUARTZ_BLOCK || material == Material.EMERALD) {
                     return ITEM_FORMATTER.apply(item);
                 }
-                return "&6🪨 " + Utils.formatItem(item);
+                Material material = item.getType();
+                String matId = material.name().toLowerCase();
+                return "&6🪨 " + item.getAmount() + " " + LangManager.getItemName(matId);
             })
             .build();
 
@@ -250,9 +254,10 @@ public class TradeInfoProviders {
         if (!(item.getItemMeta() instanceof EnchantmentStorageMeta meta)) return "";
         String enchantments = meta.getStoredEnchants().entrySet().stream()
                 .map(entry -> {
-                    String enchantment = entry.getKey().getKey().getKey().replace("_", " ");
-                    String level = Utils.toRomanNumeral(entry.getValue());
-                    return Utils.titleCase(enchantment) + " " + level;
+                                        String enchantId = entry.getKey().getKey().getKey().toLowerCase();
+                                        String level = Utils.toRomanNumeral(entry.getValue());
+                                        String name = LangManager.getEnchantName(enchantId);
+                                        return name + " " + level;
                 })
                 .collect(Collectors.joining(" + "));
         return "&d📖 " + enchantments;
